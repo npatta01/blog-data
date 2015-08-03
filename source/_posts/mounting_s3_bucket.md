@@ -3,10 +3,10 @@ title: Mounting S3 bucket
 date: 2015-07-22
 
 categories:
-- spark
+- amazon
 tags:
-- python
-- spark
+- amazon
+- s3
 
 
 ---

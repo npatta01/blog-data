@@ -3,10 +3,9 @@ title: Retrieving the size of s3 bucket
 date: 2015-07-23
 
 categories:
-- spark
+- amazon
 tags:
-- python
-- spark
+- amazon
 - ec2
 
 
