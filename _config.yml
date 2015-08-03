@@ -63,7 +63,8 @@ pagination_dir: page
 # Extensions
 ## Plugins: http://hexo.io/plugins/
 ## Themes: http://hexo.io/themes/
-theme: minos
+#theme: minos
+theme: landscape
 
 # Deployment
 ## Docs: http://hexo.io/docs/deployment.html
@@ -74,3 +75,7 @@ deploy:
   
  # Disqus
 disqus_shortname: npatta01-blog
+
+
+post_asset_folder: true
+
