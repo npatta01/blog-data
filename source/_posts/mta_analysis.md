@@ -41,7 +41,7 @@ Commuters
 
 MTA provides a [dataset](http://web.mta.info/developers/fare.html) that provides info given a station, how many paid with Full Fare, 1 Day pass, 30 day pass.
 
-If we assume that New Yorkers have a 30 year pass, lets look at how many people who rode the subway used the commuter pass.
+If we assume that New Yorkers have a 30 day pass, lets look at how many people who rode the subway used the commuter pass.
 
 We defined a value called the
 
