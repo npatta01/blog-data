@@ -22,8 +22,3 @@ As of this post, the most recent version of mvn is 3.3.3.
 Here is a gist on how to install it.
 
 {% gist 512404dee5cd7fd26ac1 maven-333.sh %}
-
-
-{% blockquote %}
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque hendrerit lacus ut purus iaculis feugiat. Sed nec tempor elit, quis aliquam neque. Curabitur sed diam eget dolor fermentum semper at eu lorem.
-{% endblockquote %}

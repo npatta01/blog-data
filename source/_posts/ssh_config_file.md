@@ -27,6 +27,17 @@ Host github.com
     IdentityFile ~/.ssh/id_git
     Port 22
 
+Host home
+   Hostname homeserver.duckdns.org
+   User ubuntu
+   Port 2224
+   IdentityFile ~/.ssh/id_homeserver
+
 ```
 
 You can ignore the port line above, is the ssh server is listening on port 22.
+
+Now, you can connect to the destination, by using
+```
+ssh home
+```
