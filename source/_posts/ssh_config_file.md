@@ -1,0 +1,32 @@
+title: SSH Config file
+
+date: 2015-09-01
+
+categories:
+- hacks
+tags:
+- ssh
+- hacks
+
+
+---
+
+If you have multiple ssh keys, one can connect to a different host using
+
+```
+ssh -i ~/.ssh/custom_key  username@host.com
+```
+
+Another way to deal with multiple hosts ans keys is to use an ssh config file (~/.ssh/config)
+
+For example, here is how my file looks
+
+```
+Host github.com
+    User git
+    IdentityFile ~/.ssh/id_git
+    Port 22
+
+```
+
+You can ignore the port line above, is the ssh server is listening on port 22.
