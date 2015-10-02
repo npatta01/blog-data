@@ -42,8 +42,10 @@ mkdir ~/remote
 Mount the file file system
 ```
 sshfs <username>@<ipaddress>:/remotepath ~/remote
+```
 
 if using an alias, you can do
+```
 sshfs home:/remotepath ~/remote
 ```
 

@@ -1,6 +1,6 @@
-title: Installing cuda 7.0 on Ubuntu 14.04
+title: Installing cuda 7.5 on Ubuntu 15.04
 
-date: 2015-08-04
+date: 2015-08-08
 
 categories:
 - cuda
@@ -10,52 +10,68 @@ tags:
 
 ---
 
-Using python 2.7/ opencv3
 
+1 ) Download cuda 7.5 [deb](http://developer.download.nvidia.com/compute/cuda/7.5/Prod/local_installers/cuda-repo-ubuntu1504-7-5-local_7.5-18_amd64.deb)
 
-Was getting error 'undefined cv::imread'[1](https://github.com/BVLC/caffe/issues/2288)
-so, I fixed it by editing the Makefile of caffe to add  opencv_imgcodecs
+2) Install cuda
 
 ```
-LIBRARIES += glog gflags protobuf leveldb snappy \
-        lmdb \
-        boost_system \
-        hdf5_hl hdf5 \
-        opencv_imgcodecs opencv_highgui opencv_imgproc opencv_core pthread
+sudo dpkg -i cuda-repo-ubuntu1504-7-5-local_7.5-18_amd64.deb
+sudo apt-get update
+sudo apt-get install cuda
 ```
 
-https://github.com/BVLC/caffe/issues/2288
+3) Add cuda to path
 
-[2](http://stackoverflow.com/questions/27890137/undefined-symbols-for-architecture-x86-64-for-caffe-build)
+nano ~/.bashrc
+```
+export CUDA_HOME=/usr/local/cuda-7.5
+export LD_LIBRARY_PATH=${CUDA_HOME}/lib64
+
+PATH=${CUDA_HOME}/bin:${PATH}
+export PATH
+```
+
+4) (optional) check cuda works
+make a copy of the samples and build them
+
+```
+rsync -av /usr/local/cuda/samples  .
+cd samples/
+make -j4
+bin/x86_64/linux/release/deviceQuery
+
+```
+
+Hopefully you will see a message containing
+
+Detected 1 CUDA Capable device(s)
 
 
-added line in Makefile.config and commented the previous line
-INCLUDE_DIRS := $(PYTHON_INCLUDE) /usr/local/include /usr/include/hdf5/serial/
-LIBRARY_DIRS := $(PYTHON_LIB) /usr/local/lib /usr/lib /usr/lib/x86_64-linux-gnu/hdf5/serial/
+5) Download Cuda DNN
+Nvidia's DNN can speed up the neural net learning
 
+You need to do a free registration
 
-https://github.com/BVLC/caffe/issues/2690
-Followed the guide from [here](https://github.com/NVIDIA/DIGITS)
+6) Install Cuda DNN
 
-https://github.com/BVLC/caffe/issues/1276
+```
+tar -xvf cudnn-7.0-linux-x64-v3.0-prod.tgz
+sudo cp lib64/* /usr/local/cuda/lib64/
+sudo cp include/* /usr/local/cuda/include/
 
-export PYTHONPATH=${CAFFE_HOME}/python:$PYTHONPATH
+```
 
+7)  Install cnnem
+```
+cd cnmem
+mkdir build
+cd build
+cmake ..
+make
+sudo cp include/cnmem.h /usr/local/cuda/include
+sudo cp build/*.so  /usr/local/cuda/lib64/
 
-import caffe
+```
 
-
-
-CUDNN_STATUS_ARCH_MISMATCH
-
-I solved it commenting both cuDNN and CPU possibilities at the beginning of the Makefile.config file in order to work only with CUDA and then rebuilding the library with the "make clean/all/test/runtest" commands. It shows a message skipping two test samples when running "make test", since they are the cuDNN based samples that I am not using anymore. Then, I was able run the mnist/train_lenet.sh example.
-
-
-#tell to use theano
-echo -e "\n[global]\nfloatX=float32\ndevice=gpu\n[mode]=FAST_RUN\n\n[nvcc]\nfastmath=True\n\n[cuda]\nroot=/usr/local/cuda" >> ~/.theanorc  
-
-pip install theano
-
-http://markus.com/install-theano-on-aws/
-
-python `python -c "import os, theano; print os.path.dirname(theano.__file__)"`/misc/check_blas.py
+8) 
