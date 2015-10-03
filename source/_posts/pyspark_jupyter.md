@@ -1,4 +1,4 @@
-title: Setting up pyspark
+title: Setting up pyspark with jupyter
 
 date: 2015-08-01
 
@@ -46,7 +46,7 @@ Test  if thing works
 
 Start ipython-notebook
 ```
-ipython notebook
+IPYTHON_OPTS="notebook" $SPARK_HOME/bin/pyspark
 ```
 
 Below is some setup code
