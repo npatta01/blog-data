@@ -23,18 +23,18 @@ Here are my notes for getting it to work, assuming a clean install
 
 Download a version of spark with a package type of pre-built for hadoop 2/6 or later
 ```
-wget http://www.apache.org/dyn/closer.lua/spark/spark-1.5.0/spark-1.5.0-bin-hadoop2.6.tgz
+wget http://apache.arvixe.com/spark/spark-1.5.0/spark-1.5.0-bin-hadoop2.6.tgz
 ```
 Unzip folder
 ```
-tar xvf spark-1.5.0-bin-hadoop2.6.tgz
+tar -xvf spark-1.5.0-bin-hadoop2.6.tgz
 ```
 Set environment variables Spark Home and update python path
 
 ```
 nano ~/.bashrc
 
-export SPARK_HOME=~spark-1.5.0-bin-hadoop2.6
+export SPARK_HOME=~/spark-1.5.0-bin-hadoop2.6
 export PATH=$SPARK_HOME/bin:$PATH
 
 export PYTHONPATH=$SPARK_HOME/python/:$PYTHONPATH
