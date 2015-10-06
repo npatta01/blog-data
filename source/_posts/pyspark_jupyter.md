@@ -44,12 +44,26 @@ export PYTHONPATH=$SPARK_HOME/python/lib/py4j-0.8.2.1-src.zip:$PYTHONPATH
 
 Test  if thing works
 
-Start ipython-notebook
+There are two ways to start spark:
+
+1 a) Using spark to connect to local cluster
+On the terminal run
 ```
 IPYTHON_OPTS="notebook" $SPARK_HOME/bin/pyspark
 ```
 
-Below is some setup code
+The resulting ipython notebook will have the spacrk context intialized to the locahost.
+The spark context is availble as the variable sc
+
+
+1 b) Using spark to connect to a possibly remote cluster
+
+Start ipython notebook
+
+```
+ipython notebook
+```
+Type the below code
 
 ```
 #import statements
@@ -58,18 +72,16 @@ from pyspark import SparkConf
 
 #spark conf
 conf = ( SparkConf()
-         .setMaster('local[*]')
+         .setMaster("local[*]")
          .setAppName('pyspark')
         )
 
 sc = SparkContext(conf=conf)
 
+```
 
-```
-Change log level.
-By default,  spark logs by level of INFO, which can include a lot of info
-```
-sc.setLogLevel('WARN')
+2) sample code
+Here is a sample code to check if a number is prime
 
 ```
 
@@ -106,3 +118,35 @@ print nums.filter(isprime).count()
 ```
 
 If everything works, the output should be 78498
+
+
+3) Optional: Change spark logging
+If you noticed on the console, a lot of information is printed in the default logging.
+
+There are two ways, to change it.
+
+a) Update spark context
+Type the below code in the notebook
+```
+sc.setLogLevel('WARN')
+```
+
+Resulting commands will result in less logging
+
+b) updating logging.conf
+
+On the terminal , run
+```
+cp $SPARK_HOME/conf/log4j.properties.template $SPARK_HOME/conf/log4j.properties
+nano $SPARK_HOME/conf/log4j.properties
+```
+
+Change the line
+```
+log4j.rootCategory=INFO, console
+```
+to
+
+```
+log4j.rootCategory=WARN, console
+```
