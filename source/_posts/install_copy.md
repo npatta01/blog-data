@@ -43,6 +43,15 @@ run
 sudo sysctl -p /etc/sysctl.d/60-copy.conf
 ```
 
+Note : If the above doesn't work, try running the below commands
+
+```
+echo fs.inotify.max_user_watches=524288 | sudo tee -a /etc/sysctl.conf
+sudo sysctl -p
+```
+
+
+
 References
 [askubuntu](http://askubuntu.com/questions/454936/copy-app-error-the-open-file-ulimit-level-is-too-low-please-increase-it-other)
 [source 2](http://tranduyhung.joomla.com/18-copy-on-linux-the-open-file-ulimit-level-is-too-low-please-increase-it-otherwise-changes-will-not-be-detected-properly)
