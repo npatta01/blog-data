@@ -15,3 +15,4 @@ Other Places to Find Me
 
 [LinkedIn](https://www.linkedin.com/in/nidhinpattaniyil)
 [GitHub](https://github.com/npatta01)
+[Resume](nidhin_pattaniyil_resume.pdf)
