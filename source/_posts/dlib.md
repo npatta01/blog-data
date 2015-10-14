@@ -1,6 +1,6 @@
 title: Installing python dlib
 
-date: 2015-10-10
+date: 2015-08-10
 
 categories:
 - vision

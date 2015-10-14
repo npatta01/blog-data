@@ -1,4 +1,4 @@
-title: Texata 2015: Round 2
+title: Texata 2015 Round 2
 
 date: 2015-10-11
 
@@ -28,7 +28,7 @@ I wish I was more familiar with graphing Geospatial data. I had a 60mb csv file 
 
 Hopefully I will be better in those areas for next year's Texata.
 
-Here are questions I was interested and the relevant Big Query 
+Here are questions I was interested and the relevant Big Query
 
 
 ### number of trips in 2013
