@@ -41,6 +41,6 @@ Given an interesting data set, there are questions I am interested in answering.
 
 Hopefully next year I will do better.
 
-Here is a [markdown](nyc_taxi/observations.txt) of the questions I was interested in answering.
+Here is a [markdown](observations.txt) of the questions I was interested in answering.
 
 Did you take part in this year's competition? If so, please feel free to share your approaches and questions.
