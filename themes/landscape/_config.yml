@@ -3,8 +3,9 @@ menu:
   Home: /
   Archives: /archives
   About: /about
+  Projects: /projects
 
-rss: /atom.xml
+#rss: /atom.xml
 
 # Content
 excerpt_link: Read More
@@ -20,7 +21,7 @@ widgets:
 - recent_posts
 
 # Miscellaneous
-google_analytics:
+google_analytics: UA-45866674-5
 favicon: /favicon.png
 twitter:
 google_plus:
