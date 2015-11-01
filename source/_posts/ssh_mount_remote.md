@@ -27,7 +27,10 @@ scp  path_to_file_locally home:~/
 
 It might be nice, if we could have the remote folder mounted locally so, we can edit files with a gui.
 
-One way to do such a thing is using ssfs. In ubuntu, you can connect
+One way to do such a thing is using ssfs.
+<!-- more -->
+
+In ubuntu, you can connect
 
 ```
 sudo apt-get install sshfs

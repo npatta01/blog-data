@@ -14,7 +14,7 @@ tags:
 Spark is a general-purpose cluster computing system.
 
 Here are some of my notes in setting up:
-
+<!-- more -->
 
 - [download](http://spark.apache.org/downloads.html) spark distribution with a package type of 'pre-built for Hadoop 2/6 or later' even though if you don't have hadoop installed
 - Set the environment variable SPARK_HOME such as

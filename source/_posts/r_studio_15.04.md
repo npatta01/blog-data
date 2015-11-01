@@ -14,7 +14,7 @@ tags:
 ---
 
 Here are my notes in installing R on linux
-
+<!-- more -->
 1 ) Add R-Cran mirror
 You can find mirror urls [here](https://cran.r-project.org/mirrors.html)
 

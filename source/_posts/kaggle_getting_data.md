@@ -12,7 +12,7 @@ tags:
 ---
 
 There might be instances where you might need to download a Kaggle dataset to another machine, possibly in an amazons ec2 instance.
-
+<!-- more -->
 In order to download the data, you need to be logged in.
 
 One solution is to  export your cookies and tell wget to use your cookies when downloading the data
@@ -30,4 +30,4 @@ The option cut-dirs flatten the directories.
 
 
 
-This information was based on a helpful post in the kaggle [forums](https://www.kaggle.com/c/diabetic-retinopathy-detection/forums/t/15313/downloading-data/85858) 
+This information was based on a helpful post in the kaggle [forums](https://www.kaggle.com/c/diabetic-retinopathy-detection/forums/t/15313/downloading-data/85858)

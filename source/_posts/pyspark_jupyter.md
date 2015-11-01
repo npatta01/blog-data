@@ -13,6 +13,9 @@ tags:
 
 ---
 
+Notes on setting up pyspark and jupyter notebook.
+<!-- more -->
+
 Spark is a general-purpose cluster computing system.
 
 In a previous {% post_link setting_up_pyspark.md [post] %}, I showed how to setup spark with ipython.

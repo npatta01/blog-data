@@ -9,6 +9,8 @@ tags:
 - deeplearning
 
 ---
+Notes on setting up cuda on an ubuntu machine.
+<!-- more -->
 
 
 1 ) Download cuda 7.5 [deb](http://developer.download.nvidia.com/compute/cuda/7.5/Prod/local_installers/cuda-repo-ubuntu1504-7-5-local_7.5-18_amd64.deb)
@@ -74,4 +76,4 @@ sudo cp build/*.so  /usr/local/cuda/lib64/
 
 ```
 
-8) 
+8)

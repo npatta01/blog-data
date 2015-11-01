@@ -11,7 +11,7 @@ tags:
 ---
 
 [Texata](http://www.texata.com/) is a big data competition held yearly in Texas. 2015 is the second year that the event is being held.
-
+<!-- more -->
 There are 3 rounds each about 4hours each.
 
 - The first round was answering multiple choice questions that tested the theory and business of Data Science.

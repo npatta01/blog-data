@@ -12,7 +12,7 @@ tags:
 ---
 
 Here is my notes on how to mount an s3 bucket as a file system.
-
+<!-- more -->
 This [link](https://paycointalk.org/topic/159/how-to-mount-aws-s3-bucket-to-ubuntu-server-14-04) helped me.
 
 

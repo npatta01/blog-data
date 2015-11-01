@@ -12,7 +12,9 @@ tags:
 
 ---
 
-I recently wanted to get opencv installed on my machine.
+I recently wanted to get opencv installed on my ubuntu machine.
+
+<!-- more -->
 
 I needed to install these optional dependencies.
 ```

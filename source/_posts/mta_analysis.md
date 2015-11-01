@@ -8,7 +8,7 @@ tags:
 - analysis
 - datascience
 - mta
-
+- metis
 
 ---
 
@@ -18,6 +18,7 @@ They provide [data sets](http://web.mta.info/developers/turnstile.html) such as 
 
 
 Lets see if we can find out the ideal place and time to distribute flyers to NY residents.
+<!-- more -->
 
 Weekday vs Weekends
 -----
@@ -71,7 +72,7 @@ Using Ny restaurant health inspection data from [here](https://nycopendata.socra
 
 {% asset_img  top_station_res.png [Restaurants near top commuter stations] %}
 
-{% asset_img  carroll_st.png Restaurants near Carrol Station] %}
+{% asset_img  carroll_st.png [Restaurants near Carrol Station] %}
 
 The repo containing my analysis can be found [here](https://github.com/stephanieleevillanueva/ds4_Benson).
 

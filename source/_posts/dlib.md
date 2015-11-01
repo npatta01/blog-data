@@ -12,9 +12,9 @@ tags:
 
 [Dlib](http://dlib.net/) is C++ machine learning library
 
-Below are some instructions to install it
+Here are some instructions to install it
 
-
+<!-- more -->
 - clone the repo
 ```
 git clone git@github.com:davisking/dlib.git

@@ -11,16 +11,16 @@ tags:
 ---
 
 I recently wanted to import a large dump of github data provided by ghtorrent[http://ghtorrent.org/] .
-
+<!-- more -->
 The data was 99GB and I wanted to know the progress.
 
 There is a cli tool called [pv](http://linux.die.net/man/1/pv) that gives progress of the dump file read.
 
-So, one can use 
+So, one can use
 
 ```
 pv sqlfile.sql | mysql -uxxx -pxxxx dbname
-``` 
+```
 
 Another tip, I learned was that the default mysql options are not optimized for your system config.
 
