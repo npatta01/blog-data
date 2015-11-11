@@ -3,16 +3,18 @@ comments: false
 date:
 
 ---
-I am an aspiring data scientist currently attending the Metis Summer Bootcamp.
-By the end of the program, I hope to have the  knowledge and skills to solve
-machine learning problems using Python.
+I am recent data science fellow from Metis, a data science boot camp.
+Previously I was a software engineer at Comcast and a Masters student in Computer Science from RIT.
 
+Learning is my drug. There are so many things I am excited to learn and share my trials and triumps.
 
-Please feel free to contact me through email
-npatta01@gmail.com
+If there is something you feel that I know and would love to discus with me.
+
+Currently I am in the job market actively looking for a new opportunity to learn and help a company learn with their data.
+
 
 Other Places to Find Me
-
+[Email](npatta01@gmail.com)
 [LinkedIn](https://www.linkedin.com/in/nidhinpattaniyil)
 [GitHub](https://github.com/npatta01)
 [Resume](nidhin_pattaniyil_resume.pdf)
