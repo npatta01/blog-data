@@ -1,6 +1,6 @@
 title: Pydata Ny 2015 Conference
 
-date: 2015-07-19
+date: 2015-11-11
 
 categories:
 - conference
@@ -31,5 +31,3 @@ Nov 10:
  When the videos uploaded, I will link to them.
 
  Was there a talk that I missed, that I should have seen?
-
- 
