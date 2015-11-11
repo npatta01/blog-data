@@ -28,6 +28,9 @@ Nov 10:
 - Topic Modeling sand Beer reviews
 
 
+Nov 11:
+- Network Fundamnetals([Repo](https://github.com/ericmjl/Network-Analysis-Made-Simple))
+
  When the videos uploaded, I will link to them.
 
  Was there a talk that I missed, that I should have seen?
