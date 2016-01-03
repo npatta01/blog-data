@@ -55,3 +55,16 @@ sshfs home:/remotepath ~/remote
 If everything, works the folder remote path will be mounted to the remote folder locally.
 
 Any changes you make to the folder remote, will automatically be synced.
+
+If you need to umount the ssh mount, you can use
+
+```
+fusermount -u /remotepath
+```
+
+If you have a weak connection, and want it to reconnect automatically, you can use
+```
+sshfs -o follow_symlinks,nonempty,reconnect,ServerAliveInterval=15,ServerAliveCountMax=3 home:/remotepath ~/remote
+
+
+```

@@ -60,3 +60,11 @@ Now, in your browser you can access services running on your remote host on urls
 
 localhost:8080
 amazon_public_ip:8080
+
+
+If the above too much, and you just want to forward a single port, one can use
+
+```
+ssh -L 9000:localhost:5432 user@example.com
+```
+The above will forward local traffic from port 9000 to the remote server port 5432.

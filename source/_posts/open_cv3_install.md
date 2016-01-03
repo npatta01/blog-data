@@ -42,6 +42,21 @@ Some issues , I have encountered were,
  PYTHON3_LIBRARY=/usr/lib/x86_64-linux-gnu/libpython3.4m.so\
 
 
+I had to update cmake from v2 to v3
+
+```
+
+sudo add-apt-repository ppa:george-edison55/cmake-3.x
+sudo apt-get update
+
+sudo apt-get install cmake
+
+sudo apt-get upgrade
+
+
+```
+
+
 I then build opencv from source following this [guide](http://www.pyimagesearch.com/2015/07/20/install-opencv-3-0-and-python-3-4-on-ubuntu/).
 
 

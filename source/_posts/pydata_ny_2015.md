@@ -30,6 +30,9 @@ Nov 10:
 
 Nov 11:
 - Network Fundamnetals([Repo](https://github.com/ericmjl/Network-Analysis-Made-Simple))
+- D3 in jupter [Repo](https://github.com/stitchfix/d3-jupyter-tutorial)
+- Blaze: https://github.com/cpcloud/strata-nyc-2015
+
 
  When the videos uploaded, I will link to them.
 
