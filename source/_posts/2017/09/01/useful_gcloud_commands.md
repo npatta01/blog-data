@@ -3,6 +3,8 @@ title: Useful Google Cloud Commands
 date: 2017-10-01
 ---
 
+If your infrastructure is in Google Cloud , it is helpful to use the google cloud sdk.
+Here are some of the common commpands I use.
 
 # Installing  
 
